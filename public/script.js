@@ -5,8 +5,12 @@ const modal = document.querySelector('.modal')
 for(let card of cards) {
     card.addEventListener("click",function(){
         const linkId = card.getAttribute("id")
-        modalOverlay.classList.add('active')
-        modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${linkId}`
+        /*pra abrir uma nova página*/
+        window.location.href= `/courses/${linkId}`
+
+        /*pra abrir um modal*/
+        /*modalOverlay.classList.add('active')
+        modalOverlay.querySelector('iframe').src = `https://rocketseat.com.br/${linkId}`*/
     })
 }
 

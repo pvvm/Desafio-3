@@ -7,12 +7,12 @@
 {% block content %}
 <div id="wrapper">
     <img src="https://pbs.twimg.com/profile_images/953595371875422210/0pWsfSSp_400x400.jpg">
-    <h1>Rocketseat</h1>
-    <h2>Educação voltada para a formação de programadores</h2>
-    <ul>Aulas online de:
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
+    <h1>{{about.name}}</h1>
+    <h2>{{about.description}}</h2>
+    <ul>{{about.aulas}}
+    {% for aul in about.aula %}
+        <li>{{aul.name}}</li>
+    {% endfor %}
     </ul>
 </div>
 

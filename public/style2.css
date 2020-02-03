@@ -115,6 +115,7 @@ header{
     border: 4px solid var(--color-purple);
     background-color: rgb(36, 20, 51);
     cursor: pointer;
+    display: grid;
 }
 
 .card__image-container {
@@ -196,4 +197,48 @@ iframe {
     width: 100%;
     height: 100%;
     margin: 0vh auto;
+}
+
+/*====PAGE====*/
+
+.page {
+    text-align: center;
+    padding: 50px;
+}
+
+.page img {
+    height: 350px;
+}
+
+.page h1 {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.page h2 {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.page__info {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.page__info p {
+    text-align: center;
+    padding: 5px 20px;
+    color: white;
+    font-size: 15px;
+    background: var(--color-purple);
+    border-radius: 20px;
+    position: relative;
 }

@@ -12,38 +12,22 @@
 </div>
 
 <section class="cards">
-    <div class="card" id="starter">
+
+    {% for item in items %}
+
+    <div class="card" id="{{item.id}}">
         <div class="card__image-container">
-            <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg">
+            <img src="https://skylab.rocketseat.com.br/static/{{item.image}}.svg">
         </div>
-        <div class="card__content">Pequenos cursos de variadas linguagens para se tornar um programador desejado</div>
+        <div class="card__content">{{item.description}}</div>
         <div class="card__info">
-            <p>15 módulos</p>
-            <p class="card__price">Grátis</p>
+            <p>{{item.length}}</p>
+            <p class="card__price">{{item.price}}</p>
         </div>
     </div>
 
-    <div class="card" id="launchbase">
-        <div class="card__image-container">
-            <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg">
-        </div>
-        <div class="card__content">Domine programação do zero por meio de aulas online e desafios</div>
-        <div class="card__info">
-            <p>48 módulos</p>
-            <p class="card__price">12x R$80,00</p>
-        </div>
-    </div>
+    {% endfor %}
 
-    <div class="card" id="gostack">
-        <div class="card__image-container">
-            <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg">
-        </div>
-        <div class="card__content">Treinamento imersivo nas tecnologias mais modernas</div>
-        <div class="card__info">
-            <p>35 módulos</p>
-            <p class="card__price">12x R$126,00</p>
-        </div>
-    </div>
 </section>
 
 <div class="modal-overlay">
